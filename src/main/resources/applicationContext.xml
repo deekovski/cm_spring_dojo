@@ -12,6 +12,12 @@
         <constructor-arg type="java.lang.String" value="message"/>
     </bean>
 
-    <bean name="setterbasedBean" class="cm.ps.springdojo.model.SetterbasedBean"/>
+    <bean name="setterbasedBean" class="cm.ps.springdojo.model.SetterbasedBean">
+        <property name="attr1"><value>val1</value></property>
+        <property name="attr2"><value>val2</value></property>
+        <property name="attr3"><value>val3</value></property>
+        <property name="attr4"><value>val4</value></property>
+        <property name="attr5"><value>val5</value></property>
+    </bean>
 
 </beans>
