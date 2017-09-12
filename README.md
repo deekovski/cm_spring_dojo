@@ -1,12 +1,12 @@
-#Spring Coding-Dojo
+# Spring Coding-Dojo
 
-##Lesson 1: Get to know the application-context
+## Lesson 1: Get to know the application-context
 
-###Problem
+### Problem
 
 FooServiceTest fails
 
-###Learnings
+### Learnings
 
 1. Debug application-context and BeanFactory
 2. Different ways to initialize a bean
