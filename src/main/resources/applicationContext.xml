@@ -11,4 +11,7 @@
     <bean name="prototypeBean" factory-method="createInstance" class="cm.ps.springdojo.model.PrototypeBean" scope="prototype">
         <constructor-arg type="java.lang.String" value="message"/>
     </bean>
+
+    <bean name="setterbasedBean" class="cm.ps.springdojo.model.SetterbasedBean"/>
+
 </beans>
