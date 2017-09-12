@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = SpringDojoApplication.class)
-public class FuServiceTest {
+public class FooServiceTest {
 
     @Autowired
     FuService fuService;
