@@ -24,7 +24,7 @@ public class FooServiceTest implements ApplicationContextAware{
 
     @Test
     public void shouldReturnMessage() {
-        assertThat(fooService.getMessage()).isNotNull();
+        assertThat(fooService.getMessage()).isEqualTo("message");
     }
 
     @Override
