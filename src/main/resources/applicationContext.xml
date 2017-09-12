@@ -8,7 +8,7 @@
     </bean>
 
 
-    <bean name="prototypeBean" factory-method="createInstance" class="cm.ps.springdojo.model.PrototypeBean">
+    <bean name="prototypeBean" factory-method="createInstance" class="cm.ps.springdojo.model.PrototypeBean" scope="prototype">
         <constructor-arg type="java.lang.String" value="message"/>
     </bean>
 </beans>
