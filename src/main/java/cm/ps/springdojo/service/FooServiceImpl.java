@@ -1,6 +1,6 @@
 package cm.ps.springdojo.service;
 
-public class FuServiceImpl implements FuService{
+public class FooServiceImpl implements FooService {
 
     @Override
     public String getMessage() {

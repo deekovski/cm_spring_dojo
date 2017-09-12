@@ -1,5 +1,5 @@
 package cm.ps.springdojo.service;
 
-public interface FuService {
+public interface FooService {
     public String getMessage();
 }
