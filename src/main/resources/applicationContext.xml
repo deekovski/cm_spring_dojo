@@ -7,4 +7,8 @@
         <constructor-arg type="java.lang.String" value="message"/>
     </bean>
 
+
+    <bean name="prototypeBean" factory-method="createInstance" class="cm.ps.springdojo.model.PrototypeBean">
+        <constructor-arg type="java.lang.String" value="message"/>
+    </bean>
 </beans>
