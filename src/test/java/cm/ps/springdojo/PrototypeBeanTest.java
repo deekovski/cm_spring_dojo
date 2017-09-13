@@ -2,6 +2,7 @@ package cm.ps.springdojo;
 
 import cm.ps.springdojo.config.SpringDojoApplication;
 import cm.ps.springdojo.model.PrototypeBean;
+import lombok.SneakyThrows;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.BeansException;
@@ -19,7 +20,8 @@ public class PrototypeBeanTest implements ApplicationContextAware{
     private ApplicationContext applicationContext;
 
     @Test
-    public void testPrototype() throws InterruptedException {
+    @SneakyThrows({InterruptedException.class})
+    public void testPrototype() {
         PrototypeBean bean1 =  (PrototypeBean) applicationContext.getBean("prototypeBean");
         System.out.println("bean 1 created on: " + bean1.getTimeStamp());
 
@@ -33,7 +35,8 @@ public class PrototypeBeanTest implements ApplicationContextAware{
     }
 
     @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+    @SneakyThrows(BeansException.class)
+    public void setApplicationContext(ApplicationContext applicationContext) {
         this.applicationContext = applicationContext;
     }
 }
