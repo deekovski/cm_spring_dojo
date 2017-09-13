@@ -3,6 +3,7 @@ package cm.ps.springdojo;
 
 import cm.ps.springdojo.config.SpringDojoApplication;
 import cm.ps.springdojo.service.FooService;
+import lombok.SneakyThrows;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.BeansException;
@@ -28,7 +29,8 @@ public class FooServiceTest implements ApplicationContextAware{
     }
 
     @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+    @SneakyThrows(BeansException.class)
+    public void setApplicationContext(ApplicationContext applicationContext) {
         this.applicationContext = applicationContext;
     }
 }
